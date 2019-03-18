@@ -28,6 +28,7 @@ html, body {
 
 .bg-cards {
     background-color: #1861b3;
+    background-image: linear-gradient(to bottom left, #1861b3, #01affc);
     border-radius: 15pt;
 }
 
@@ -132,6 +133,14 @@ html, body {
     margin-right: auto;
 }
 
+.text-bold {
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+.ptb-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 .px-8 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -234,6 +243,58 @@ html, body {
   .service-container-wrapper .row {
       padding-top: 4rem;
     }
+
+    span.text-bold:before {
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 2px;
+        background-color: #c288ef;
+        right: 8%;
+        margin-top: 22px;
+    }
+    span.text-bold:after {
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 2px;
+        background-color: #c288ef;
+        left: 8%;
+        margin-top: -30px;
+    }
+
+    .note-block {
+        background-color: #f9f9f9;
+    }
+    .details-block {
+        background-color: #dfc9f4;
+    }
+    .account-block {
+
+    }
+
+    .btn-rounded {
+        width: 200px;
+        border-radius: 10em;
+        color: #fff;
+        background-color: #1d50a3;
+    }
+
+    .service-block {
+        background-color: #f2f2f2;
+    }
+    table.service-table tbody tr td > * {
+        vertical-align: middle;
+        margin-right: 25px;
+    }
+    .table-label {
+        width: 160px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
 /* RESPONSIVE CSS
   -------------------------------------------------- */
 
