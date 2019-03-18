@@ -5,6 +5,11 @@ body {
     color: #5a5a5a;
 }
 
+html, body {
+    margin: 0;
+    padding:0;
+}
+
 .bg-top {
     background-color: #f0f1f2;
 }
@@ -79,6 +84,10 @@ body {
     font-size: 1.5vw;
 }
 
+.footer-bg {
+    background-color: #313332;
+}
+
 /* MARKETING CONTENT
   -------------------------------------------------- */
 
@@ -118,7 +127,7 @@ body {
     height: 100px;
     border-radius: 50%;
     border: 1px solid transparent;
-    background-color: red;
+    background-color: #b5a6a6;
     margin-left: auto;
     margin-right: auto;
 }
@@ -128,9 +137,8 @@ body {
     padding-right: 6rem;
 }
 
-.py-6 {
+.pt-6 {
     padding-top: 5rem;
-    padding-bottom: 5rem;
 }
 .text-primary {
     color: #1d50a3;
@@ -155,7 +163,77 @@ body {
 .text-yellow {
     color: #e0f00c;
 }
+.card-image-container-footer {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background-color: #1e1e1e;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.arrow {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+  }
+  .arrow:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    
+    transform: skew(0deg, 4deg);
+    z-index: 1;
+    margin-left: -15px;
+  }
+  .arrow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 51.5%;
+    transform: skew(0deg, -4deg);
+    z-index: 1;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+.arrow-footer:before, .arrow-footer:after {
+    background-color: #f1f3ee;
+}
+.arrow-service:before, .arrow-service:after {
+    background-color: #fff;
+}
+  .container-footer{
+    z-index: 0;
+    margin-top: -6rem;
+  }
+  .container-footer .container {
+    margin-top: 4rem;
+  }
+  .footer-title {
+    margin-top: 4rem;
+  }
+  .p-0 {
+      padding: 0 !important;
+  }
+  .footer-wrapper {
+      padding-bottom: 3rem;
+  }
+  .service-container-wrapper {
+    margin-top: -2rem;
+  }
+  .service-container-wrapper .row {
+      padding-top: 4rem;
+    }
 /* RESPONSIVE CSS
   -------------------------------------------------- */
 
